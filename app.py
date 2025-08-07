@@ -22,8 +22,8 @@ st.markdown("""
         cursor: pointer;
     }
     .chat-bubble {
-        background-color: grey;
-        color: black; /* <-- Added this line to fix mobile dark mode issue */
+        background-color: #0455A4;
+        color: white; /* <-- Added this line to fix mobile dark mode issue */
         padding: 1em;
         border-radius: 10px;
         margin-bottom: 1em;
