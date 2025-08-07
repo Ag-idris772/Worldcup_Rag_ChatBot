@@ -22,7 +22,7 @@ st.markdown("""
         cursor: pointer;
     }
     .chat-bubble {
-        background-color: #f4f6f9;
+        background-color: black;
         color: white; /* <-- Added this line to fix mobile dark mode issue */
         padding: 1em;
         border-radius: 10px;
