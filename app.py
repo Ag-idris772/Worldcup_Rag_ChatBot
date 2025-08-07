@@ -11,7 +11,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.image("C:\\Users\\aguda\\OneDrive\\Desktop\\wc_project\\wc image.jpg")
+st.image("wc_image.jpg")
 st.title("FIFA World Cup Chatbot 🌎")
 st.markdown("Ask anything about the FIFA World Cup and get smart, document-grounded answers!")
 
