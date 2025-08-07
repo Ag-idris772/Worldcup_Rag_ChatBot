@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+python-dotenv
+scikit-learn
+langchain
+langchain-huggingface
+groq
+sentence-transformers
+langgraph
+langsmith
+ipython
+ipykernel
+
+
