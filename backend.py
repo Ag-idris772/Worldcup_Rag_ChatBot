@@ -18,8 +18,7 @@ class Preprocessing:
         )
 
         # Initialize Groq client
-        from groq import Groq
-        import os
+        load_dotenv()
         self.client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
     def compute_hash(self, text: str) -> str:
