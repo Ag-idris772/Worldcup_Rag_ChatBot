@@ -11,7 +11,7 @@ st.markdown("""
     .main { background-color: #f4f6f9; }
     .stButton>button {
         background-color: #0455A4;
-        color: grey;
+        color: white;
         border-radius: 8px;
         padding: 0.5em 1em;
         border: none;
@@ -22,7 +22,7 @@ st.markdown("""
         cursor: pointer;
     }
     .chat-bubble {
-        background-color: white;
+        background-color: grey;
         color: black; /* <-- Added this line to fix mobile dark mode issue */
         padding: 1em;
         border-radius: 10px;
