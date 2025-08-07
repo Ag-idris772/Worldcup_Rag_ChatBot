@@ -11,15 +11,9 @@ from groq import Groq
 
 class Preprocessing:
     def __init__(self):
-        # Force HuggingFace model to run on CPU
-        self.embedding_model = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
-            model_kwargs={"device": "cpu"}
-        )
-
-        # Initialize Groq client
         load_dotenv()
         self.client = Groq(api_key=os.environ["GROQ_API_KEY"])
+        self.embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     def compute_hash(self, text: str) -> str:
         return hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
