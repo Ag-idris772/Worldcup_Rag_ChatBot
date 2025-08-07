@@ -23,6 +23,7 @@ st.markdown("""
     }
     .chat-bubble {
         background-color: white;
+        color: black; /* <-- Added this line to fix mobile dark mode issue */
         padding: 1em;
         border-radius: 10px;
         margin-bottom: 1em;
@@ -72,7 +73,6 @@ if submit_button and user_query:
         # for i, doc in enumerate(top_k_docs, 1):
         #     preview = doc.page_content.strip().replace("\n", " ")
         #     st.markdown(f"{i}. *{preview[:200]}{'...' if len(preview) > 200 else ''}*")       
-
 
 # Display chat history
 for q, a in reversed(st.session_state.chat_history):
