@@ -55,7 +55,7 @@ class Preprocessing:
         )
         try:
             response = self.client.chat.completions.create(
-                model="llama3-70b-8192",
+                model="llama-3.3-70b-versatile", #"llama3-70b-8192" - has been deprecated,
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant skilled at rewriting questions."},
                     {"role": "user", "content": prompt}
@@ -100,7 +100,7 @@ class Preprocessing:
 
         try:
             response = self.client.chat.completions.create(
-                model="llama3-70b-8192",
+                model="llama-3.3-70b-versatile", #"llama3-70b-8192" - has been deprecated,
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": final_prompt}
